@@ -5,5 +5,8 @@
 <form action="" method="POST">{% csrf_token %}
   {{ form.as_p }}
   <p><input type="submit" value="Log In"></p>
+  <p><input type="hidden" name="Next" value="{{ next }}"></p>
 </form>
+<p>Not a member? <a href="{%url 'registration_register' %}">Register</a>!</p>
+
 {% endblock %}
