@@ -8,13 +8,14 @@
   <body>
     <div id="header">
       <ul id="control-bar">
+      <a href="{% url 'registration_register' %}">
       {% if user.is_authenticated %}
         {% if user.is_staff %}
           <li><a href="{% url 'admin:index' %}">admin</a></li>
         {% endif %}
-        <li><a href="{% url 'logout' %}">logout</a></li>
+        <li><a href="{% url 'auth_logout' %}">logout</a></li>
       {% else %}
-        <li><a href="{% url 'login' %}">login</a></li>
+        <li><a href="{% url 'auth_login' %}">login</a></li>
       {% endif %}
       </ul>
     </div>

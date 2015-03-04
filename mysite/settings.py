@@ -93,5 +93,5 @@ STATIC_URL = '/static/'
 
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'mysite/templates'), )
-LOGIN_URL = '/login/'
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
