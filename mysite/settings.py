@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myblog',
+    'registration'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,6 +77,13 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+REGISTRATION_OPEN = True
+
+ACCOUNT_ACTIVATION_DAYS = 7
+
+REGISTRATION_AUTO_LOGIN = True
+
 
 
 # Static files (CSS, JavaScript, Images)

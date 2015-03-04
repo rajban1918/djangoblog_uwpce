@@ -3,6 +3,7 @@ from django.conf.urls import patterns, url
 
 urlpatterns = patterns(
     'myblog.views',
+
     url(r'^$',
         'list_view',
         name="blog_index"),
@@ -10,3 +11,4 @@ urlpatterns = patterns(
         'detail_view',
         name="blog_detail"),
 )
+
